@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+/*  ---  BLOCK1  ---  */
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("bg2.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+.header nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+
+
+    align-items: center;
+    justify-content: space-between;
+}
+.header #logo{
+    padding-left: 5%;
+}
+.header ul{
+    display: flex;
+    gap: 50px;
+    padding-right: 5%;
+}
+.header li{
+    position: relative;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+.header li a::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(145, 59, 192);
+    position: absolute;
+    bottom: -6px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header li a:hover::after{
+    width: 100%;
+    transition: all .6s;
+}
+
+.headText{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    color: #121212;
+    width: 50%;
+}
+.headText h1{
+    font-size: 60px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.headText h3{
+    font-size: 37px;
+    font-family: 'Asap', sans-serif;
+    font-weight: lighter;
+    opacity: .5;
+}
+.headText span{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*Block - 2*/
+
+.about{
+    height: 250px;
+    width: 70%;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+
+}
+.about p{
+    font-size: 20px;
+    text-align: center;
+    opacity: .5;
+    font-family: 'Asap', sans-serif;
+
+}
+
+/*    -------   */
+.skill{
+    width: 100%;
+    height: 340px;
+    color: white;
+}
+
+.skill h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.skill ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+    gap: 30px;
+}
+
+.skill li{
+    cursor: pointer;
+    color: #913bc0;
+    text-shadow: 1px 1px 0px white;
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.ss ul li::after{
+    content: ' ';
+    display: block;
+    height: 20px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    bottom: -20px;
+    font-weight: bold;
+    border: 2px solid #913bc0;
+}
+
+.ss ul li:nth-child(1):after{
+    width: 85%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(2):after{
+    width: 75%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(3):after{
+    width: 80%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(4):after{
+    width: 68%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(5):after{
+    width: 82%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(6):after{
+    width: 98%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(7):after{
+    width: 82%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(8):after{
+    width: 65%;
+    border: 3px solid #913bc0;
+}
+.ss ul li:nth-child(9):after{
+    width: 20%;
+    border: 3px solid #913bc0;
+}
+
+/*Block - 3*/
+
+.pro{
+    width: 100%;
+    height: 700px;
+    color: white;
+}
+
+.pro h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+
+}
+
+#projects{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-content: space-around;
+    position: relative;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+    border: 4px double white;
+}
+.card-bottom{
+    width: 300px;
+    height: 200px;
+    background-color: #913bc0;
+}
+
+#projects h2{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+#projects p{
+    color: white;
+    text-align: center;
+    font-family: 'asap', sans-serif;
+    font-weight: lighter;
+}
+
+#projects .card:hover{
+    box-shadow: 0px 0px 30px #913bc0;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all .3s;
+    opacity: 1;
+}
+
+
+/*Block - 4*/
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+}
+
+.footer h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.footer #sm{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer img:hover{
+    transform: translateY(5px);
+    transition: all .3s;
+}
